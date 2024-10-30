@@ -1,0 +1,94 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #000000;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #000000;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0px;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: #00fce7;
+}
+
+button:hover {
+  border-color: #09dfc2;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infoEvento {
+  display: flex;
+  background-color: #00ffea;
+  margin: 5px;
+}
+
+.infoEvento img {
+  width: 600px;
+}
+
+.infoEvento h1 {
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+.inicial_tela {
+  display: flex;
+}
+
+.inicial_cabecalho {
+  display: flex;
+  flex-direction: row;
+}
+
+.inicial_cabecalho_bt {
+  margin-left: 70px;
+  width: 170px;
+  margin-left: 20px;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.inicial_campo_lista {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.inical_bt_lista {
+  display: flex;
+}
