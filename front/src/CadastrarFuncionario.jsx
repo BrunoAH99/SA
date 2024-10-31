@@ -26,7 +26,6 @@ function CadastrarFuncionario() {
             setTelefone('')
             setMatricula('')
         } catch (error) {
-            console.error("Erro ao cadastrar funcionario:", error)
             setMensagem('Erro ao cadastrar funcionario')
         }
     }

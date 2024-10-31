@@ -8,6 +8,7 @@ import CadastrarFuncionario from './CadastrarFuncionario'
 import Inicial from './Inicial'
 import Funcionarios from './ListaFuncionario'
 import Funcionario from './Funcionario'
+import Registro from './Registro'
 
 const router = createBrowserRouter([
   {
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
     element: <CadastrarFuncionario />,
   },
   {
-    path: "/princpal", 
+    path: "/principal", 
     element: <Inicial />,
   },
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
     path: "/funcionario/:id",
     element: <Funcionario/>
   },
+  {
+    path: "/registro",
+    element: <Registro/>
+  }
 
 ])
 

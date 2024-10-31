@@ -107,8 +107,8 @@ const relatorio = async (req, res) => {
 
 const funcionarios = async (req, res) => {
     try {
-        const listaFuncionarios = await FUNCIONARIO.findAll() // Busca todos os funcionários
-        res.status(200).send({ listaFuncionarios })
+        const listaFuncionarios = await FUNCIONARIO.findAll()
+        res.status(200).send(listaFuncionarios)
     } catch (erro) {
         res.status(500).send({ mensagem: 'Erro ao buscar funcionários' })
     }
@@ -131,8 +131,8 @@ const funcionario = async (req, res) => {
 
 const epis = async (req, res) => {
     try {
-        const listaEPIs = await EPI.findAll() // Busca todos os EPIs
-        res.status(200).send({ listaEPIs })
+        const listaEPIs = await EPI.findAll()
+        res.status(200).send(listaEPIs)
     } catch (erro) {
         res.status(500).send({ mensagem: 'Erro ao buscar funcionários' })
     }
