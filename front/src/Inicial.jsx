@@ -25,8 +25,11 @@ function Inicial() {
                 <Link to={`/lista_funcionarios`}  >
                     <button className='inical_bt_lista'> FUNCIONARIOS </button>
                 </Link>
-                <Link to={`/funcionario/cadastro`} >
+                <Link to={`/lista_EPIs`} >
                     <button className='inical_bt_lista'> EPIs</button>
+                </Link>
+                <Link to={`/registro`} >
+                    <button className='inical_bt_lista'> Registro</button>
                 </Link>
             </div>
 

@@ -9,6 +9,8 @@ import Inicial from './Inicial'
 import Funcionarios from './ListaFuncionario'
 import Funcionario from './Funcionario'
 import Registro from './Registro'
+import EPIs from './ListaEPI'
+import EpiDetalhes from './EPI'
 
 const router = createBrowserRouter([
   {
@@ -37,7 +39,13 @@ const router = createBrowserRouter([
   },
   {
     path: "/registro",
-    element: <Registro/>
+    element: <Registro/>,
+  },{
+    path: "/lista_EPIs",
+    element: <EPIs/>
+  },{
+    path: "/epi/:id",
+    element:<EpiDetalhes/>
   }
 
 ])

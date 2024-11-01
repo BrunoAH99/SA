@@ -128,6 +128,20 @@ const funcionario = async (req, res) => {
     }
 }
 
+const epi = async (req, res) => {
+    const { id } = req.params
+    try {
+        const epiEncontrado = await EPI.findByPk(id)
+        if (!epiEncontrado) {
+            return res.status(404).send({ mensagem: 'EPI não encontrado' })
+        }
+        res.status(200).send(epiEncontrado)
+    } catch (erro) {
+        console.error(erro)
+        res.status(500).send({ mensagem: 'Erro ao buscar EPI' })
+    }
+}
+
 
 const epis = async (req, res) => {
     try {
@@ -202,4 +216,4 @@ const apagarEpi = async (req, res) => {
     }
 }
 
-export { cadastrarEPI, cadastrarFuncionario, login, funcionarios, funcionario, validarSenha, relatorio, epis, atualizarFuncionario, apagarFuncionario, atualizarEpi, apagarEpi }
+export { cadastrarEPI, cadastrarFuncionario, login, funcionarios, funcionario, validarSenha, relatorio, epis, epi, atualizarFuncionario, apagarFuncionario, atualizarEpi, apagarEpi }
